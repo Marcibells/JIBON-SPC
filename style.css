@@ -172,15 +172,266 @@
    }
 
    /* banner */
-.banner{
+   .banner{
     background-color: var(--gray);
     padding-top: 5rem;
-}
-.banner__left h1{
-    font-size: 14rem;
+  }
+  .banner__wrapper{
+   display: flex;
+  }
+  .banner__left{
+    padding-left: 15rem;
+    padding-top: 25rem;
+  }
+  .banner__left h1{
+    font-size: 10rem;
     line-height: 1;
-    max-width: 80rem;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+  .banner__right{
+    position: relative;
+    left: 25rem;
+    top: 0;
+  }
+  .banner__right img{
+    width:100rem;
+    height: 70rem;
+  }
+
+
+/* about me */
+.about__me {
+  height: 700px;
 }
+.aboutme__left {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin-left: 60rem;
+  margin-bottom: 30rem;
+  top: 90rem;
+}
+.aboutme__left img {
+  border-radius: 50px;
+}
+.aboutme__right h2 {
+  font-size: 7.5rem;
+  font-weight: 600;
+  margin-left: 105rem;
+  top: -108rem;
+}
+.aboutme__right p {
+  margin-left: 105rem;
+  top: -108rem;
+  padding: 1.5rem;
+  margin-left: 103.4rem;
+  font-weight: 300;
+}
+.aboutme__right p span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+.aboutme__nav {
+  color: var(--green);
+  display: flex;
+  gap: 3rem;
+  margin-left: 105rem;
+  margin-top: 2rem;
+}
+.aboutme__nav li a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--dark);
+  transition: 0.5 ease;
+}
+.aboutme__nav li a:hover {
+  transition: 0.5 ease-in;
+  color: var(--green);
+}
+
+.aboutme__right ul p {
+  font-size: 1.3rem;
+  padding: 1.5rem;
+  margin-left: 103.4rem;
+}
+.aboutme__right ul.exp {
+  margin-top: 0.5rem;
+}
+.aboutme__right span.use {
+  font-weight: 500;
+}
+.aboutme__right span.web {
+  font-weight: 500;
+}
+.aboutme__right span.int {
+  font-weight: 500;
+}
+header__nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ABOUT ME */
+.about{
+  padding-bottom: 5rem;
+}
+.about__wrapper{
+  display: grid;
+  grid-template-columns: 50rem 1fr;
+  gap: 5rem;
+}
+.about__left{
+  padding-left: 17rem;
+}
+.about__left img{
+  width: 60rem;
+  border-radius: 1rem;
+  transform: translateY(-1.5rem);
+}
+.about__right{
+  padding-top: 4rem;
+}
+.about__right h3{
+  font-size: 7rem;
+  font-weight: 500;
+}
+.about__right p{
+  max-width: 70rem;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about__right span{
+  font-weight: 700;
+}
+.about__title{
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about__title li{
+  display: inline-block;
+}
+.about__title li::after{
+  content: " ";
+  width: 0px;
+  height: 2px;
+  background-color: var(--gray);
+  transition: 300ms;
+  display: block;
+}
+.about__title li:hover::after{
+  width: 100%;
+}
+.about__main-skills{
+  font-weight: 600;
+}
+.about__main-skills li{
+  display: flex;
+}
+.about__main-skills li span{
+  font-weight: 300;
+}
+.about__main-desc{
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+/* DESIGN FOR JAVASCRIPT */
+.about__title li:first-child.open{
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.about__main-skills{
+  display: none;
+}
+.about__main-skills.open{
+  display: block;
+}
+/* services */
+.services{
+  padding: 5rem 0;
+}
+.services__title{
+  text-align: center;
+}
+.services__title h3{
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.services__title p{
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.services__wrapper{
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  gap: 3rem;
+  align-content: center;
+  justify-content: center;
+ }
+.services__card{
+  background-color: var(--gray);
+  padding: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services__card span{
+  color: var(--green);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.services__card h4{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.services__card p{
+  font-weight: 300;
+  max-width: 20rem;
+}
+/* client */
+.client{
+  padding:5rem 0;
+}
+.client__title{
+  text-align: center;
+}
+.client__title h3{
+  font-size:6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.client__card p{
+  font-weight: 300;
+  max-width: 20rem;
+}
+.client__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  text-align: center;
+}
+.client__card img{
+  padding:1rem;
+}
+.client__wrapper{
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  gap: 3rem;
+  align-content: center;
+  justify-content: center;
+ }
 
 
 
